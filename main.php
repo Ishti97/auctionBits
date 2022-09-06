@@ -54,7 +54,7 @@ include 'Include/DB.php';
             </ul> -->
           </li>
 		  <?php if($identity == 'seller') {?>
-		  <li><a href="Product/AddProduct.php?username=<?php echo $username; ?>&identity=<?php echo $identity; ?>">Sell Product</a></li>
+		  <li><a href="Product/AddProduct.php?username=<?php echo $username; ?>&identity=<?php echo $identity; ?>">Add Product</a></li>
 		  <?php }?>
 		  <?php if($identity == 'bidder') {?>
 		  <!-- <li><a href="Login/Bidder.php">Buy Product</a></li> -->
@@ -78,8 +78,10 @@ include 'Include/DB.php';
               </li>
             </ul> -->
           <!-- </li> -->
-		  <li><a href="cart.php?username=<?php echo $username; ?>&identity=<?php echo $identity; ?>">My Cart</a></li>
-		  <?php }?>
+		
+    <!--      <li><a href="cart.php?username=<?php echo $username; ?>&identity=<?php echo $identity; ?>">My Cart</a></li>-->
+		
+          <?php }?>
           <li><a href="Post/blogs.php?username=<?php echo $username; ?>&identity=<?php echo $identity; ?>">Blog & Feedback</a></li>
 		 
         </ul>
@@ -161,18 +163,7 @@ include 'Include/DB.php';
 					
 			<?php	}
 					?>
-					
-				
-
-                                
-                               
-
-                              
-                                
-                               
-                                
-								
-                               
+					                          
                             </div>
                         </div>
                     </a>
@@ -186,7 +177,7 @@ include 'Include/DB.php';
     </div>
 
 	<!--Start of Tawk.to Script-->
-<script type="text/javascript">
+ <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 (function(){
 var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
@@ -196,7 +187,7 @@ s1.charset='UTF-8';
 s1.setAttribute('crossorigin','*');
 s0.parentNode.insertBefore(s1,s0);
 })();
-</script>
+</script> 
 <!--End of Tawk.to Script-->
 
     </body>
